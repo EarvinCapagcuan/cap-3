@@ -1,0 +1,15 @@
+++++++ Pages ++++++
+@login
+@register
+@homepage - acts as home page and login
+@dashboard
+	->main list
+		->students list
+		->instructors list
+		->batch list
+@student information
+@instructor information
+@class information
+@grade
+@criteria
+

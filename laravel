@@ -1,0 +1,16 @@
+####open .env -> update database information
+php artisan serve ****** start laravel
+php artisan make:controller <controller name> ***create the contorller
+php artisan make:migration <name should be descriptive> --create=<table> ****create the migration file, and table name should be in lower case and the plural
+####open the created migration file add the table details/rows
+php artisan make:model <model> *****model should be singular and the same as the table name but in uc first
+####create a schema go to to fix string length-thing. add use Schema; then Schema::defaultStringLength(191); in appServicePovider under boot
+php artisan migrate *****start creating the table
+
+
+////create the model migration controller in one go
+php artisan make:model Item -mc
+
+////crate an item with foreign key
+on migration file
+     $table->foreign('column_name')->references('<column_ref>')->on('<column_parent>')->onUpdate('cascade')->onDelete('restrict');
